@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    printf("Enter the first number (a): ");
+    scanf("%d", &a);
+    printf("Enter the second number (b): ");
+    scanf("%d", &b);
+    printf("/nBefore swapping: a = %d, b = %d/n" a, b);
+    a = a + b; // a now holds the sum of original a and b
+    b = a - b; // b now holds the original value of a (a = b - b = a)
+    a = a - b;// a now holds the original value of b (a = b - a = b )
+    printf("After swapping: a = %d, b = %d/n" a, b);
+    return 0;
+}
